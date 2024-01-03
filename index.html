@@ -4,12 +4,876 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
   <body>
-    <header><div class="container"></div></header>
-    <main></main>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="container">
+          <p class="header-start">Старт 12.01</p>
+          <h1 class="header-title">КОЛЬОРИ</h1>
+          <span class="header-title-text">ЯКІ ПРАЦЮЮТЬ НА ТЕБЕ</span>
+          <p class="header-course">УНІСЕКС <span>онлайн-курс</span></p>
+          <p class="header-info">
+            Дізнайся, як створити
+            <span>свій індивідуальний кольоровий гардероб</span> за 7 уроків без
+            залучення стиліста
+          </p>
+          <div class="buy-button-container">
+            <button class="header-button">хочу на курс</button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/header-mark-1x.png 1x,
+                    ./src/images/header-mark-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/images/header-mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-87%</p>
+            </div>
+          </div>
+          <p class="timer-text">
+            Встигніть до кінця доби і
+            <span>отримайте бонуси</span>
+          </p>
+          <div id="countdown" class="countdown">
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+          </div>
+          <div class="bonus-wrapper">
+            <h3 class="bonus-title">Бонуси</h3>
+            <picture
+              ><source
+                srcset="
+                  ./src/images/bonus-gift-mobile-1x.png 1x,
+                  ./src/images/bonus-gift-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="50"
+                height="50" />
+              <img
+                class="bonus-wrapper-gift"
+                src="./src/images/bonus-gift-mobile-1x.png"
+                alt="gift"
+                width="50"
+                height="50"
+            /></picture>
+            <ul class="bonuses-list">
+              <li class="list-item">
+                <span>Урок</span> “Як комбінувати принти”
+              </li>
+              <li class="list-item">
+                <span>Урок</span> “Кольорові сумки Made in Ukraine”
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-one">
+        <div class="container">
+          <h2 class="sect-one-title">Цей курс для</h2>
+          <span class="title-continue">тебе, якщо ти:</span>
+          <ul class="sect-one-list list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/list-one-item-one-mobile-1x.png 1x,
+                    ./src/images/list-one-item-one-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="306"
+                  height="100" />
+                <img
+                  src="./src/images/list-one-item-one-mobile-1x.png"
+                  alt="01"
+                  width="306"
+                  height="100"
+              /></picture>
+              <p class="list-item-text">
+                Хочеш нарешті дізнатися, які кольори пасують саме тобі
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/list-one-item-two-mobile-1x.png 1x,
+                    ./src/images/list-one-item-two-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="306"
+                  height="100" />
+                <img
+                  src="./src/images/list-one-item-two-mobile-1x.png"
+                  alt="02"
+                  width="306"
+                  height="90"
+              /></picture>
+              <p class="list-item-text">
+                Твій гардероб складається із однотипних кольорів, які ти купуєш
+                аби не помилитись
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/list-one-item-three-mobile-1x.png 1x,
+                    ./src/images/list-one-item-three-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="306"
+                  height="90" />
+                <img
+                  src="./src/images/list-one-item-three-mobile-1x.png"
+                  alt="03"
+                  width="306"
+                  height="90"
+              /></picture>
+              <p class="list-item-text">
+                Хочеш носити яскраві кольори, але не знаєш як
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="sect-two-background">
+          <div class="container">
+            <h2 class="sect-two-title">Результати навчання</h2>
+            <p class="under-title">Після курсу ти отримаєш:</p>
+            <ul class="sect-two-list list">
+              <li class="list-item">
+                чіткий покроковий план, як визначити свої кольори
+              </li>
+              <li class="sect-two-list-decoration"></li>
+              <li class="list-item">
+                знання, як працювати із кольорами не тільки в своєму гардеробі,
+                а й в гардеробі близьких та рідних
+              </li>
+              <li class="sect-two-list-decoration"></li>
+              <li class="list-item">
+                розуміння, як підбирати речі за кольорами в свій гардероб
+              </li>
+            </ul>
+            <div class="border-container">
+              <h2 class="border-container-title">переваги курсу</h2>
+              <ul class="border-container-list list">
+                <img
+                  class="border-container-dots"
+                  src="./src/images/border-container-dots.svg"
+                  alt="dots"
+                  width="11"
+                  height="201"
+                />
+                <li class="list-item">
+                  Онлайн-курс побудований на практичному досвіді роботи із
+                  приватними клієнтами, та ведучими на телебаченні та підходить,
+                  як для чоловіків, так і для жінок
+                </li>
+
+                <li class="list-item">
+                  7 уроків з матеріалами в записі на зручній платформі – доступ
+                  до матеріалів у зручний для тебе час
+                </li>
+                <li class="list-item">
+                  Термін доступу до матеріалів курсу -  від 1.5 місяці. Ти
+                  зможеш рухатись в своєму режимі протягом періоду доступу
+                </li>
+              </ul>
+            </div>
+            <div class="course-program">
+              <h2 class="course-program-title">ПРОГРАМА курсу</h2>
+              <div class="faq">
+                <div class="question open isOpen">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-one-mobile-1x.png 1x,
+                          ./src/images/course-program-one-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-one-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">1 УРОК</p>
+                      <p class="lesson-name">КОЛЬОРИ ТА ЇХ ВПЛИВ</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Закрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-two-mobile-1x.png 1x,
+                          ./src/images/course-program-two-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-two-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">2 УРОК</p>
+                      <p class="lesson-name">
+                        КОЛІР:<br />
+                        МИСТЕЦТВО І НАУКА. ХАРАКТЕРИСТИКИ КОЛЬОРІВ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-three-mobile-1x.png 1x,
+                          ./src/images/course-program-three-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-three-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">3 УРОК</p>
+                      <p class="lesson-name">ТЕОРІЯ КОЛЬОРОТИПІВ</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-four-mobile-1x.png 1x,
+                          ./src/images/course-program-four-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-four-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">4 УРОК</p>
+                      <p class="lesson-name">КОЛЬОРИ АХРОМАТИ</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-five-mobile-1x.png 1x,
+                          ./src/images/course-program-five-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-five-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">5 УРОК</p>
+                      <p class="lesson-name">
+                        УНІВЕРСАЛЬНІ КОЛЬОРИ, ЯКІ ПАСУЮТЬ ВСІМ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-six-mobile-1x.png 1x,
+                          ./src/images/course-program-six-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-six-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">6 УРОК</p>
+                      <p class="lesson-name">ПСИХОЛОГІЯ КОЛЬОРУ</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question-name">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/images/course-program-seven-mobile-1x.png 1x,
+                          ./src/images/course-program-seven-mobile-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="260"
+                        height="174" />
+                      <img
+                        class="course-program-image"
+                        src="./src/images/course-program-seven-mobile-1x.png"
+                        alt="03"
+                        width="260"
+                        height="174"
+                    /></picture>
+                    <div class="program-name-container">
+                      <p class="lesson-number">7 УРОК</p>
+                      <p class="lesson-name">
+                        ПРАВИЛА ПОЄДАННЯ КОЛЬОРІВ.<br />
+                        ВИДИ ГАРДЕРОБІВ ЗА КОЛЬОРАМИ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Цей курс про активне, позитивне, щасливе та здорове життя.
+                      Ваше життя
+                    </p>
+                  </div>
+                  <div class="open-question">
+                    <p class="changeStatus">Відкрити опис</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-three">
+        <div class="container">
+          <h2 class="sect-three-title">авторка курсу</h2>
+          <picture
+            ><source
+              srcset="
+                ./src/images/author-image-mobile-1x.png 1x,
+                ./src/images/author-image-mobile-2x.png 2x
+              "
+              media="(min-width: 320px)"
+              width="300"
+              height="300" />
+            <img
+              class="author-image"
+              src="./src/images/author-image-mobile-1x.png"
+              alt="Леся Бартецька"
+              width="300"
+              height="300"
+          /></picture>
+          <p class="author-name">Леся Бартецька</p>
+          <ul class="author-list list">
+            <li class="list-item">
+              семирічний досвід робити персональним стилістом
+            </li>
+            <li class="list-item">
+              розробила концепцію «Раціонального гардероба» і впровадила її в
+              гардероби 200+ клієнтів 
+            </li>
+            <li class="list-item">
+              впровадила раціональний гардероб навіть на телебаченні для 12
+              ведучих  національного телеканалу «Перший»
+            </li>
+            <li class="list-item">
+              1000+ студентів онлайн та оффлайн програм 
+            </li>
+            <li class="list-item">
+              запрошений експерт на національному телебаченні та національних
+              конференціях (Kyiv Fashion, Baby Expo)
+            </li>
+            <li class="list-item">
+              акредитована міжнародною асоціацією стилістів 
+            </li>
+            <li class="list-item">
+              диплом британської школи стилю та іміджу ColorМеВeautiful
+            </li>
+            <li class="list-item">
+              магістр програми «Прогнозування моди» Київського Університету
+              Бориса Гринченко 
+            </li>
+          </ul>
+          <h2 class="course-price-title">вартість навчання</h2>
+          <div class="table-border">
+            <table>
+              <thead>
+                <tr>
+                  <td>НАПОВНЕННЯ</td>
+                  <td>Мої кольори</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5 основних уроків</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Урок 6. Психологія кольору</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Урок 7. Поєднання кольорів</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Телеграм-канал курсу</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Бонусний урок поєднання принтів</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Гайд «Кольорові сумки Made in Ukraine»</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Термін доступу до матеріалів</td>
+                  <td>45 днів</td>
+                </tr>
+                <tr>
+                  <td>Повна вартість</td>
+                  <td>3000грн</td>
+                </tr>
+                <tr>
+                  <td>Ціна для вас. Знижка 87%</td>
+                  <td>390грн</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="buy-button-container">
+            <button class="header-button">йду на курс</button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/header-mark-1x.png 1x,
+                    ./src/images/header-mark-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/images/header-mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-87%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-four">
+        <div class="container">
+          <h2 class="sect-four-title">ВіДГУКИ ТА КЛІЄНТИ</h2>
+          <p class="under-title">
+            Мої клієнти, клієнтки і студентки, які вже знають свої кольори
+          </p>
+          <div class="siema">
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-1-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-1-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-1-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-2-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-2-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-2-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-3-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-3-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-3-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-4-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-4-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-4-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-5-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-5-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-5-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-6-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-6-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-6-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-7-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-7-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-7-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-8-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-8-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-8-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-9-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-9-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-9-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-10-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-10-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-10-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-11-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-11-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-11-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-12-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-12-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-12-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-13-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-13-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-13-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-14-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-14-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-14-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+            <div class="clients-images">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/clients-images/mobile-1x/client-15-mobile-1x.png 1x,
+                    ./src/images/clients-images/mobile-2x/client-15-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="280"
+                  height="317" />
+                <img
+                  src="./src/images/clients-images/mobile-1x/client-15-mobile-1x.png"
+                  alt="sale"
+                  width="280"
+                  height="317"
+              /></picture>
+            </div>
+          </div>
+          <div class="siema-button-control">
+            <button class="prev">
+              <img
+                src="./src/images/siema-button-left.svg"
+                alt="left"
+                width="36"
+                height="36"
+              />
+            </button>
+            <button class="next">
+              <img
+                src="./src/images/siema-button-left.svg"
+                alt="right"
+                width="36"
+                height="36"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script type="module" src="/main.js"></script>
+    <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/js-modal.js" type="module"></script>
+    <script src="./src/js/siema.min.js"></script>
+    <script src="./src/js/siema.js" type="module"></script>
   </body>
 </html>
