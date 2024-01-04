@@ -489,6 +489,12 @@ p {
   gap: 60px;
 }
 
+.sect-one-list img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list-item-text {
   color: #101010;
   text-align: center;
