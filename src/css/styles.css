@@ -176,6 +176,7 @@ p {
 }
 
 .header-button {
+  display: block;
   color: var(--white, #f6f6f6);
   text-align: center;
   font-family: Manrope;
@@ -189,6 +190,9 @@ p {
 
   max-width: 320px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   border-radius: 60px;
   background: #eb4200;
 
@@ -760,14 +764,14 @@ p {
   margin-bottom: 20px;
 }
 
-.question-plus {
+/* .question-plus {
   transform: rotate(0);
 
   transition: transform 250ms linear;
 }
 .question.open .question-plus {
   transform: rotate(45deg);
-}
+} */
 
 /* course-program-image */
 
@@ -1088,9 +1092,13 @@ tbody tr:nth-child(7) td:nth-child(2) {
 
 .section-four {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
   background: #101010;
+}
+
+.section-four .container {
+  position: relative;
 }
 
 .sect-four-title {
@@ -1136,6 +1144,8 @@ tbody tr:nth-child(7) td:nth-child(2) {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  margin-bottom: 120px;
 }
 
 .siema img {
@@ -1145,34 +1155,357 @@ tbody tr:nth-child(7) td:nth-child(2) {
 .siema-button-control {
   display: flex;
   align-items: center;
-
-  position: relative;
 }
 
 .prev {
   position: absolute;
-  top: 20px;
+  top: 470px;
   left: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: none;
   border: none;
   cursor: pointer;
 
-  width: 36px;
-  height: 36px;
+  width: 41px;
+  height: 41px;
 }
 
 .next {
   position: absolute;
-  top: 20px;
+  top: 470px;
   right: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: none;
   border: none;
   cursor: pointer;
 
-  width: 36px;
-  height: 36px;
+  width: 41px;
+  height: 41px;
 
   transform: rotate(180deg);
+}
+
+/* siema-reviews */
+
+.siema-reviews-border {
+  max-width: 240px;
+  height: 240px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 20px;
+  border: 1px solid #fff;
+
+  padding: 10px;
+}
+
+.siema-reviews img {
+  display: block;
+}
+
+.siema-reviews {
+  max-width: 220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 120px;
+}
+
+.siema-reviews-control {
+  display: flex;
+  align-items: center;
+}
+
+.prev-reviews {
+  position: absolute;
+  top: 670px;
+  left: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+}
+
+.next-reviews {
+  position: absolute;
+  top: 670px;
+  right: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+
+  transform: rotate(180deg);
+}
+
+/* section-five */
+
+.section-five {
+  padding-top: 0;
+  padding-bottom: 120px;
+
+  background: #101010;
+}
+
+.sect-five-title {
+  text-align: center;
+  font-family: Druk Cyr;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  text-transform: uppercase;
+
+  background: var(
+    --Linear,
+    linear-gradient(104deg, #eb4200 7.93%, #ff8454 49.27%, #eb4200 91.49%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  max-width: 185px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 30px;
+}
+
+/* faq-02 */
+
+.isOpen .content-two {
+  display: block;
+}
+
+.question-two {
+  position: relative;
+
+  border-radius: 15px;
+  background: #fff;
+
+  padding: 20px;
+
+  max-width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 10px;
+}
+
+.last-question {
+  margin-bottom: 0;
+}
+
+.content-two {
+  display: none;
+}
+
+.content-two p {
+  color: #0e0e0e;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 18.2px */
+}
+
+.question-two-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-two-name > p {
+  color: #0e0e0e;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 18px */
+
+  max-width: 240px;
+}
+
+.content-two p {
+  padding-top: 10px;
+}
+
+.question-plus {
+  transform: rotate(0);
+
+  transition: transform 250ms linear;
+}
+.question-two.open .question-plus {
+  transform: rotate(45deg);
+}
+
+/* footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  background: #101010;
+}
+
+.footer-deals > a[href="link"] {
+  margin-bottom: 12px;
+}
+
+.footer-deals a {
+  display: block;
+
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-deals::after {
+  content: "";
+  display: block;
+
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 52.6%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-mail-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.footer-mail {
+  display: block;
+  color: var(--white, #fff);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fop-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 30px;
+}
+
+.fop-container p {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* design creator */
+
+.creator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 40px;
+  border: 0.3px solid lightgray;
+
+  max-width: 190px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 8px;
+}
+
+.creator-container p {
+  color: var(--white, lightgray);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.help-container {
+  margin-bottom: 40px;
+}
+
+.help-text {
+  color: #8cb3ff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  margin-bottom: 10px;
+}
+
+.telegram-bot-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.telegram-link {
+  display: block;
+  color: var(--white, #fff);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.link {
 }
