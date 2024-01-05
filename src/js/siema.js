@@ -1,3 +1,5 @@
+import Siema from "siema";
+
 const mySiema = new Siema({
   selector: ".siema",
   duration: 200,
