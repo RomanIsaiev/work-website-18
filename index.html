@@ -20,7 +20,10 @@
     <header class="header">
       <div class="header-wrapper">
         <div class="container">
-          <p class="header-start">Старт 12.01</p>
+          <p class="header-start">
+            Старт <span id="dateElement"></span>.
+            <span id="monthElement"></span>
+          </p>
           <h1 class="header-title">КОЛЬОРИ</h1>
           <span class="header-title-text">ЯКІ ПРАЦЮЮТЬ НА ТЕБЕ</span>
           <p class="header-course">УНІСЕКС <span>онлайн-курс</span></p>
@@ -49,6 +52,28 @@
                   height="68"
               /></picture>
               <p class="sale-number">-87%</p>
+            </div>
+            <div class="buy-button-container" id="fixedButton">
+              <button class="header-button">хочу на курс</button>
+              <div class="header-sale-mark">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/header-mark-1x.png 1x,
+                      ./src/images/header-mark-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="68"
+                    height="68" />
+                  <img
+                    class="sale-mark"
+                    src="./src/images/header-mark-1x.png"
+                    alt="sale"
+                    width="68"
+                    height="68"
+                /></picture>
+                <p class="sale-number">-87%</p>
+              </div>
             </div>
           </div>
           <p class="timer-text">
@@ -189,14 +214,14 @@
             </ul>
             <div class="border-container">
               <h2 class="border-container-title">переваги курсу</h2>
+              <img
+                class="border-container-dots"
+                src="./src/images/border-container-dots.svg"
+                alt="dots"
+                width="11"
+                height="201"
+              />
               <ul class="border-container-list list">
-                <img
-                  class="border-container-dots"
-                  src="./src/images/border-container-dots.svg"
-                  alt="dots"
-                  width="11"
-                  height="201"
-                />
                 <li class="list-item">
                   Онлайн-курс побудований на практичному досвіді роботи із
                   приватними клієнтами, та ведучими на телебаченні та підходить,
@@ -225,14 +250,14 @@
                           ./src/images/course-program-one-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-one-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">1 УРОК</p>
@@ -241,8 +266,9 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                      Значення кольору в гардеробі і житті. Вплив кольорів на
+                      зовнішній вигляд і враження. Чи варто знати свої кольори:
+                      за і проти. Теорія кольоротипів: переваги і недоліки. 
                     </p>
                   </div>
                   <div class="open-question">
@@ -258,14 +284,14 @@
                           ./src/images/course-program-two-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-two-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">2 УРОК</p>
@@ -277,8 +303,8 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                      Колір у фізиці і мистецтві. Три характеристики кольорів:
+                      насиченість, яскравість, температура.
                     </p>
                   </div>
                   <div class="open-question">
@@ -294,14 +320,14 @@
                           ./src/images/course-program-three-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-three-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">3 УРОК</p>
@@ -310,8 +336,9 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                      Наукові засади і обґрунтування теорії кольоротипів. Як
+                      визначити свій кольоротип. Кольорові палітри для різних
+                      типів зовнішності. 
                     </p>
                   </div>
                   <div class="open-question">
@@ -327,14 +354,14 @@
                           ./src/images/course-program-four-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-four-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">4 УРОК</p>
@@ -342,10 +369,7 @@
                     </div>
                   </div>
                   <div class="content">
-                    <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
-                    </p>
+                    <p>Кольори без кольору. Властивості кольорів ахроматів. </p>
                   </div>
                   <div class="open-question">
                     <p class="changeStatus">Відкрити опис</p>
@@ -360,14 +384,14 @@
                           ./src/images/course-program-five-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-five-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">5 УРОК</p>
@@ -378,8 +402,8 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                      Перелік універсальних кольорів для будь-якої зовнішності.
+                      Кольори – цеглинки. Спойлер - не чорний. 
                     </p>
                   </div>
                   <div class="open-question">
@@ -395,14 +419,14 @@
                           ./src/images/course-program-six-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-six-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">6 УРОК</p>
@@ -411,8 +435,8 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                        Вплив кольору на наш мозок і тіло. Як управляти
+                      враженням та поведінкою людей за допомогою кольорів. 
                     </p>
                   </div>
                   <div class="open-question">
@@ -428,14 +452,14 @@
                           ./src/images/course-program-seven-mobile-2x.png 2x
                         "
                         media="(min-width: 320px)"
-                        width="260"
-                        height="174" />
+                        width="280"
+                        height="188" />
                       <img
                         class="course-program-image"
                         src="./src/images/course-program-seven-mobile-1x.png"
                         alt="03"
-                        width="260"
-                        height="174"
+                        width="280"
+                        height="188"
                     /></picture>
                     <div class="program-name-container">
                       <p class="lesson-number">7 УРОК</p>
@@ -447,8 +471,9 @@
                   </div>
                   <div class="content">
                     <p>
-                      Цей курс про активне, позитивне, щасливе та здорове життя.
-                      Ваше життя
+                      Як поєднувати кольори стильно і гармонійно. Поєднання
+                      кольорів в раціональному гардеробі. Варіанти гардеробів за
+                      кольорами.
                     </p>
                   </div>
                   <div class="open-question">
@@ -1198,5 +1223,7 @@
     <script src="./src/js/js-modal.js" type="module"></script>
     <script src="./src/js/siema.min.js"></script>
     <script src="./src/js/siema.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src//js/fixedButton.js" type="module"></script>
   </body>
 </html>
