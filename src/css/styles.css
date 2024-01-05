@@ -1317,6 +1317,7 @@ tbody tr:nth-child(7) td:nth-child(2) {
   background-image: url(../images/sect-four-circle.svg);
   background-repeat: no-repeat;
   background-position: left 0 top 0;
+  background-size: 300px;
 }
 
 .sect-five-title {
@@ -1416,7 +1417,7 @@ tbody tr:nth-child(7) td:nth-child(2) {
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
 
   background: #101010;
 }
