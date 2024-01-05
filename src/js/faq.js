@@ -1,3 +1,4 @@
+import $ from "jquery";
 const closeOpenText = document.querySelectorAll(".changeStatus");
 
 $(".question").click(function () {
