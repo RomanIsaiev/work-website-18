@@ -15,20 +15,20 @@ function getTimeRemaining(endtime) {
 
 function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+  var hoursSpan = clock.querySelector(".hours");
+  var minutesSpan = clock.querySelector(".minutes");
+  var secondsSpan = clock.querySelector(".seconds");
 
   function updateClock() {
     var t = getTimeRemaining(endtime);
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+    minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
       var deadline = new Date(Date.parse(endtime) + 24 * 60 * 60 * 1000);
-      initializeClock('countdown', deadline);
+      initializeClock("countdown", deadline);
     }
   }
 
@@ -36,31 +36,31 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-function initializeClockTwo(id, endtime) {
-  var clock = document.getElementById(id);
-  var hoursSpan = clock.querySelector('.hours-two');
-  var minutesSpan = clock.querySelector('.minutes-two');
-  var secondsSpan = clock.querySelector('.seconds-two');
+// function initializeClockTwo(id, endtime) {
+//   var clock = document.getElementById(id);
+//   var hoursSpan = clock.querySelector('.hours-two');
+//   var minutesSpan = clock.querySelector('.minutes-two');
+//   var secondsSpan = clock.querySelector('.seconds-two');
 
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+//   function updateClock() {
+//     var t = getTimeRemaining(endtime);
+//     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+//     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+//     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-      var deadline = new Date(Date.parse(endtime) + 24 * 60 * 60 * 1000);
-      initializeClockTwo('countdown-two', deadline);
-    }
-  }
+//     if (t.total <= 0) {
+//       clearInterval(timeinterval);
+//       var deadline = new Date(Date.parse(endtime) + 24 * 60 * 60 * 1000);
+//       initializeClockTwo('countdown-two', deadline);
+//     }
+//   }
 
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
+//   updateClock();
+//   var timeinterval = setInterval(updateClock, 1000);
+// }
 
-var deadline = 'September 31 2024 00:00:00 GMT+0200';
-initializeClock('countdown', deadline);
-initializeClockTwo('countdown-two', deadline);
+var deadline = "September 31 2024 00:00:00 GMT+0200";
+initializeClock("countdown", deadline);
+// initializeClockTwo('countdown-two', deadline);
 
 // timer-two
