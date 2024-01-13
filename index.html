@@ -43,13 +43,6 @@
       fbq("init", "268073422673541");
       fbq("track", "PageView");
     </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=268073422673541&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
   <body>
@@ -69,7 +62,9 @@
             залучення стиліста
           </p>
           <div class="buy-button-container">
-            <button class="header-button">хочу на курс</button>
+            <button class="header-button" data-action="open-modal">
+              хочу на курс
+            </button>
             <div class="header-sale-mark">
               <picture
                 ><source
@@ -141,7 +136,9 @@
       <section class="section-one">
         <div class="container">
           <div class="buy-button-container" id="fixedButton">
-            <button class="header-button">хочу на курс</button>
+            <button class="header-button" data-action="open-modal">
+              хочу на курс
+            </button>
             <div class="header-sale-mark">
               <picture
                 ><source
@@ -660,7 +657,9 @@
             </table>
           </div>
           <div class="buy-button-container">
-            <button class="header-button">йду на курс</button>
+            <button class="header-button" data-action="open-modal">
+              йду на курс
+            </button>
             <div class="header-sale-mark">
               <picture
                 ><source
@@ -1415,10 +1414,31 @@
         >
       </div>
     </footer>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <button
+          class="modal-close-button"
+          type="button"
+          data-action="close-modal"
+        >
+          <img
+            src="./src/images/close-modal-icon.svg"
+            alt=" close"
+            width="30"
+            height="30"
+          />
+        </button>
+        <div id="kwiga-widget-1705095842"></div>
+      </div>
+    </div>
     <script type="module" src="./src/js/jquery-3.7.0.min.js"></script>
     <script type="module" src="./src/js/faq.js"></script>
     <script type="module" src="./src/js/timer.js"></script>
-    <!-- <script type="module" src="./src/js/js-modal.js"></script> -->
+    <script type="module" src="./src/js/js-modal.js"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1705095842&uuid=7fbf4e24-9adc-4576-8752-233447e97e81&is_modal=true&producer=https://kwiga.com/"
+    ></script>
     <script type="module" src="./src/js/siema.min.js"></script>
     <script type="module" src="./src/js/siema.js"></script>
     <script type="module" src="./src/js/changeDate.js"></script>
